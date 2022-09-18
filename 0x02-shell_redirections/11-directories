@@ -1,2 +1,2 @@
-#!bin/bash
-find. -type d -not -name '_'|wc _1
+#!/bin/bash
+ls -laR | find -type d ! -iname "." | wc -l
